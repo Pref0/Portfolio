@@ -22,7 +22,7 @@ export const projects: Project[] = [
     name: "Portfolio",
     description: "My first portfolio",
     github: "https://github.com/Pref0/portfolio",
-    website: "",
+    website: "https://visionaryy.vercel.app/",
     imageUrl: Portfolio,
   },
 ];

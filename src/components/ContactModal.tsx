@@ -63,7 +63,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
         <div className="bg-background rounded-lg shadow-lg w-full max-w-md mx-4 p-6 relative">
           <button
             onClick={onClose}
-            className="absolute top-2 right-2 text-accent hover:text-gray-700"
+            className="absolute top-2 right-2 text-accent hover:text-secondary"
           >
             <FaTimes size={20} />
           </button>

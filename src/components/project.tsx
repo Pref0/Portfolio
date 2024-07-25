@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { TdesignLogoGithubFilled } from "./icons/github";
 import { MdiWeb } from "./icons/web";
+import { FaGithub } from "react-icons/fa";
+
 type Props = {
   name: string;
   description: string;
@@ -19,13 +20,13 @@ export default function Project(props: Props) {
         <div className="mt-2 flex space-x-4">
           {props.github && (
             <Link href={props.github}>
-              <TdesignLogoGithubFilled className="size-6 text-accent " />
+              <FaGithub className="size-6 text-accent" />
             </Link>
           )}
 
           {props.website && (
             <Link href={props.website}>
-              <MdiWeb className="size-6 text-accent " />
+              <MdiWeb className="size-6 text-accent" />
             </Link>
           )}
         </div>

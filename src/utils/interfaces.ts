@@ -3,6 +3,7 @@ export interface Skill {
   title: string;
   progress: string;
   color: string;
+  icon: any;
 }
 
 export interface Project {
