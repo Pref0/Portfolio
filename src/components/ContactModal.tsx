@@ -33,8 +33,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
     setError("");
 
     try {
-      const webhookURL =
-        "https://discord.com/api/webhooks/1258956731111968779/GWh0Kz2DTKokq19XbATKRQty_lKZ0I72STsHqgH2YMdtfcWsAkASyMkuUG3EK6nnfhoL"; //
+      const webhookURL = process.env.CONTACT_WEBHOOK; //
       const message = {
         content: `**Yhteydenotto pyyntö**\n\n**Nimi:** ${formData.name}\n**Sähköposti:** ${formData.email}\n**Viesti:**\n${formData.message}`,
       };
