@@ -33,7 +33,12 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
     setError("");
 
     try {
-      const webhookURL = process.env.CONTACT_WEBHOOK; //
+      const webhookURL = process.env.CONTACT_WEBHOOK;
+
+      if (!webhookURL) {
+        throw new Error("CONTACT_WEBHOOK environment variable is not defined.");
+      }
+
       const message = {
         content: `**Yhteydenotto pyyntö**\n\n**Nimi:** ${formData.name}\n**Sähköposti:** ${formData.email}\n**Viesti:**\n${formData.message}`,
       };
