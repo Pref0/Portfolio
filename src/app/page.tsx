@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Layout from "@/components/Layout";
 import Project from "@/components/project";
